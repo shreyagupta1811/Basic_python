@@ -1,0 +1,32 @@
+from numpy import *
+#val=array([10,11,12,13,14])
+#val=array([10,11,12,13,14],'i')
+#val=array([10,11,12,13,14.23])
+#val=array([10,11,12,13,14],float)
+#print(val)
+#print(val.dtype)
+
+#linespace()
+#val=linspace(0,18) '''by default it was devided into 50 equal parts'''
+#val=linspace(0,18,8)
+#print(val)
+
+ #arange()
+#val1 = arange(2,20,3)
+#print(val1)
+
+#zeros()
+#val=zeros(6)
+#val=zeros(6,int)
+#print(val)
+
+#oncs()
+#val=ones(8)
+#val=ones(8,int)
+#print(val)
+
+#logspace()
+#val=logspace(1,10,5)
+#print('%.2f' %val[4])
+#val=logspace(1,10)
+#print(val)

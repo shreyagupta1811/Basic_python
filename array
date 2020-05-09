@@ -1,0 +1,47 @@
+'''import array
+val=array.array('i',[10,11,12,-4,-3])'''
+
+from array import *
+val = array('I',[11,13,5,8])
+print(val)
+print("`````````````````````")
+print(val.buffer_info())
+print("`````````````````````")
+print(val.typecode)
+print("`````````````````````")
+val.reverse()
+print(val)
+print("`````````````````````")
+val.append(30)
+print(val)
+print("`````````````````````")
+val.insert(2,66)
+print(val)
+print("`````````````````````")
+val.remove(11)
+print(val)
+print("`````````````````````")
+print(val.count(66))
+print("`````````````````````")
+print(val.index(8))
+print("`````````````````````")
+print(val[3])
+print("`````````````````````")
+print(len(val))
+print("`````````````````````")
+for i in val:
+    print(i)
+print("`````````````````````")
+new_arr=array('i',[8,5,66,13,30])
+print(new_arr)
+print("`````````````````````")
+char_array=array('u',['a','v','u','o','p'])
+print(char_array)
+print("`````````````````````")
+fresh_arr=array(new_arr.typecode,[a for a in new_arr])
+print(fresh_arr)
+print("`````````````````````")
+i=0
+while i<len(fresh_arr):
+    print(fresh_arr[i])
+    i+=1

@@ -1,0 +1,19 @@
+#when u not specify waht this 22,or jabalpur
+'''def info(name,*data):
+    print(name)
+    print(data)
+info('Shreya',22,'B.tech','Jabalpur')
+
+#when u specify label
+def info(name,**data):
+    print(name)
+    print(data)
+info('Shreya',age=22,city='Jabalpur',degree='B.tech')
+
+#when u itterate one by one
+def info(name,**data):
+    print('name','-',name)
+    for i,j in data.items():
+        print(i,'-',j)
+
+info('Shreya',age=22,city='Jabalpur',degree='B.tech')'''

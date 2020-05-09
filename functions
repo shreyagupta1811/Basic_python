@@ -1,0 +1,21 @@
+#def greeting():
+#    print('Hello')
+#    print('Good Morning!!!!')
+#greeting()
+
+#x=int(input("enter 1st num:"))
+#y=int(input("enter 2nd num:"))
+#def add(x,y):
+#    z=x+y
+#    print(z)
+#add(x,y)
+
+
+x = int(input("enter 1st num:"))
+y = int(input("enter 2nd num:"))
+def add_sub(x,y):
+    c=x+y
+    d=x-y
+    return c,d
+result1,result2=add_sub(x,y)
+print(result1,result2)

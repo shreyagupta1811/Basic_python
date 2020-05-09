@@ -1,0 +1,16 @@
+class car:
+
+    def speed(self):
+        print("speed of car is 200km/hour")
+#one way to call method of class
+c1=car()  #constructor calling or instantiation
+car.speed(c1)
+c2=car()
+car.speed(c2)
+#second way of calling method
+c1.speed()
+c2.speed()
+
+#when u call c1.speed() behind the scene c1 passes inspeed (parameter) as speed has parameter self.
+a=5
+print(a.bit_length())

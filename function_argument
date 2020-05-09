@@ -1,0 +1,10 @@
+def update(x):
+    print(id(x))
+    x=8
+    print(id(x))
+    print('x=',x)
+#update(10)
+a=20
+print(id(a))
+update(a)
+print('x=',a)

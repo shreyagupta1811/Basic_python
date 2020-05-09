@@ -1,0 +1,14 @@
+f=open('myData','r')
+print(f)
+#print(f.read())
+print(f.readline(),end="")
+print(f.readline(),end="")
+print(f.readline(2))
+#f1=open('myStuff','w')
+f1=open('mystuff','a')  #if u want to append your code in previous code use a instread of w
+print(f1)
+f1.write("i wanted to make some trial code here")
+for data in f:
+    f1.write(data)
+
+

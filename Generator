@@ -1,0 +1,17 @@
+'''Generator gives you itterator in python
+def value():
+    yield 5
+#print(value())
+val=value()
+print(val.__next__())'''
+def TopTen():       #genertor method
+    n=1
+    while n<=10:
+        sqr=n*n
+        yield sqr   #it return itterator yield make you method as generator
+        n+=1
+
+
+value=TopTen()
+for i in value:
+    print(i)

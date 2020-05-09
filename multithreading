@@ -1,0 +1,22 @@
+from threading import *
+from time import sleep
+class Hello(Thread):
+    def run(self):
+        for i in range(5):
+            print("Hello")
+            sleep(1)
+class Hii(Thread):
+    def run(self):
+        for i in range(5):
+            print("Hii")
+            sleep(1)
+h1=Hello()
+h2=Hii()
+#h1.run()
+#h2.run()
+h1.start()
+sleep(0.2) #this is to abate collision
+h2.start()
+h1.join()   #by join main thraed wait untill h1 and h2 complete their all execution.
+h2.join()
+print("Bye")        #this byee is print becoz of main thread neither by h1 or h2

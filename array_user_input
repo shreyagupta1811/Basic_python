@@ -1,0 +1,19 @@
+from array import *
+arr=array('i',[])
+size=int(input("enter size of array:"))
+for i in range(size):
+    x=int(input("enter elemnents of array:"))
+    arr.append(x)
+print(arr)
+for i in range(size):
+    print(arr[i])
+
+value=int(input("enter value of array to search:"))
+k=0
+for e in arr:
+    if e==value:
+        print("searched value is found at",k,'index')
+        break
+    k+=1
+
+print(arr.index(value))

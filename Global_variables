@@ -1,0 +1,52 @@
+'''a=10
+def show():
+    a=20
+    print('local a',a)
+a=100
+show()
+print('Global a',a)
+print('```````````````````````````````````')
+
+a=2
+def disp():
+    global a
+    a=22
+    print('local a',a)
+disp()
+print('Global a',a)
+print('```````````````````````````````````')
+
+#accessing global and local together inside the local scope
+a=20
+def display():
+    a=50
+    x=globals()['a']
+    print('local a',a)
+    print('global a',x)
+display()
+print('Global a',a)
+print('```````````````````````````````````')
+
+#changing global variable in local scope
+a=11
+def show():
+    a=33
+    print('local a',a)
+    x=globals()['a']
+    print('Global before access',x)
+    globals()['a']=99
+    y=globals()['a']
+    print('Global after change',y)
+show()
+print('Global outside',a)
+print('```````````````````````````````````')
+
+#address of local variable and global variable
+a=90
+def disp():
+    a=100
+    print(id(a))
+    x=globals()['a']
+    print(id(x))
+disp()
+print(id(a))'''

@@ -1,0 +1,42 @@
+'''from numpy import *
+arr1=array([10,11,12,13,14])
+arr2=arr1
+print(arr1)
+print(arr2)
+
+print(id(arr1))
+print(id(arr2))
+
+arr1[0]=50
+print(arr1)
+print(arr2)'''
+#(~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+#from numpy import *
+#arr1=array([10,11,12,13,14])
+#arr2=arr1.view()
+
+#print(arr1)
+#print(arr2)
+
+#print(id(arr1))
+#print(id(arr2))
+
+#arr1[0]=90
+#print(arr1)
+#print(arr2)
+#(~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~)
+
+#from numpy import *
+#arr1=array([10,11,12,13,14])
+#arr2=arr1.copy()
+
+#print(arr1)
+#print(arr2)
+
+#print(id(arr1))
+#print(id(arr2))
+
+#arr1[0]=90
+#print(arr1)
+#print(arr2)
+

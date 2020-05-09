@@ -1,0 +1,18 @@
+class TopTen:
+    def __init__(self):
+        self.num=1
+    def __iter__(self):
+        #print("1```")
+        return self
+    def __next__(self):
+        if self.num<=10:
+            res=self.num
+            self.num+=1
+            return res
+        else:
+            raise StopIteration
+
+val=TopTen()
+for i in val:
+    print(i)
+

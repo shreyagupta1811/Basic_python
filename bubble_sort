@@ -1,0 +1,11 @@
+def sort(list):
+    x=len(list)-1
+    for i in range(0,x):
+        for j in range(x):
+            if list[j]>list[j+1]:
+                list[j],list[j+1]=list[j+1],list[j]
+        x-=1
+
+list = [5, 3, 8, 6, 7, 2,11,56,10]
+sort(list)
+print(list)

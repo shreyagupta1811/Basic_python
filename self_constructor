@@ -1,0 +1,20 @@
+class Student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def disp(self):
+        print("name and age of student is",self.name,self.age)
+
+    def compare(self,comp):
+        if self.age==comp.age:
+            print('Both are of same age')
+        else:
+            print('Both are of different age')
+
+s1=Student('Shreya',22)
+s2=Student('AArya',22)
+s1.age=26
+s1.disp()
+s2.disp()
+s1.compare(s2)

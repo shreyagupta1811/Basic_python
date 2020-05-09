@@ -1,0 +1,22 @@
+#a=10    #normal statement-that do not generate error
+#b=5
+#print(a/b)      #critical statement-that generate error
+#print("bye")
+
+a=5
+b=0
+try:
+    print("resources open")
+    print(a/b)
+    k = int(input("enter any int"))
+    print(k)
+except ZeroDivisionError as e:
+    print("Hey you cannot devide any number by 0", e)
+except ValueError as e:
+    print("Invalid input")
+except Exception as e:  #safe side for all those exception which we don't know
+    print("something went wrong")
+
+finally:
+    print("resource close")
+print("bye")

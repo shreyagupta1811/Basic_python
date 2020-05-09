@@ -1,0 +1,29 @@
+class student:
+    school='Telusko'
+
+    def __init__(self,m1,m2,m3):
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+    def avg_marks(self):    #instance level method-they are two type accessor(),mutator()
+        avg=(self.m1+self.m2+self.m3)/3
+        return avg
+
+    @classmethod
+    def disp_school(cls):       #classmethod so use cls instead od self
+        print(cls.school)
+        
+    @staticmethod
+    def info():
+        print("student information.....")
+
+s1=student(23,45,67)
+s2=student(65,54,32)
+res1=s1.avg_marks()
+print(res1)
+student.disp_school()
+res2=s2.avg_marks()
+print(res2)
+student.disp_school()
+student.info()
+

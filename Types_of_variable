@@ -1,0 +1,17 @@
+class conceller:
+    company='Olay'      #static variable,class type variable
+                        #CLASS NAMESPACE
+    def __init__(self,price,tone_no):
+        self.price=price            #non-static variable,instance level variable
+        self.tone_no=tone_no        #OBJECT NAMESPACE
+
+    def show(self):
+        print('price:',self.price)
+        print('tone no',self.tone_no)
+        print('company',conceller.company)
+
+c1=conceller(450,3)
+c2=conceller(670,2)
+c1.show()
+conceller.company='Lakme'
+c2.show()

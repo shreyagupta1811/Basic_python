@@ -1,0 +1,16 @@
+from calculation import *
+
+a=20
+b=10
+
+res1=add(a,b)
+print(res1)
+
+res2=sub(a,b)
+print(res2)
+
+res3=mul(a,b)
+print(res3)
+
+res4=div(a,b)
+print(res4)

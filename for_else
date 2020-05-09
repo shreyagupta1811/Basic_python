@@ -1,0 +1,7 @@
+list=[13,16,28,46,98]
+for i in list:
+    if i%5==0:
+        print(i)
+        break
+else:
+    print('not found')

@@ -1,0 +1,31 @@
+'''METHOD OVERLOADING-method overloading simply means more than one method having same name but diffrent parameter body
+  either diff type or diff in no
+  #there is no concept of method overloading in python
+class student:
+     def __init__(self,m1,m2):
+         self.m1=m1
+         self.m2=m2
+     def __add__(self,m1,m2):
+         s=m1+m2
+         return s
+     def __add__(self,m1,m2,m3):
+         s=m1+m2+m3
+         return s
+s1=student(10,20)
+result=s1.__add__(10,20,30)
+print(result)'''
+class student:
+    def __add__(self,a=None,b=None,c=None):
+        s=0
+        if a!=None and b!=None and c!=None:
+            s=a+b+c
+            return s
+        elif a!=None and b!=None:
+            s=a+b
+            return s
+        else:
+            s=a
+            return s
+s1=student()
+result=s1.__add__(10)
+print(result)

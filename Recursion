@@ -1,0 +1,10 @@
+import sys
+sys.setrecursionlimit(3000)
+print(sys.getrecursionlimit())
+i = 1
+def show():
+    global i
+    i+=1
+    print("Hello",i)
+    show()
+show()

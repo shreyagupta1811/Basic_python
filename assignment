@@ -1,0 +1,16 @@
+list=[]
+for i in range(5):
+    name=input("enter name:")
+    list.append(name)
+print(list)
+def count(list):
+    more = 0
+    less = 0
+    for i in list:
+        if len(i)>5:
+            more+=1
+        else:
+            less+=1
+    return more,less
+more,less=count(list)
+print("more than 5: {} and less than 5: {}".format(more,less))

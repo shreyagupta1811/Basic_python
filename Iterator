@@ -1,0 +1,11 @@
+'''#itterator
+list=[1,2,3,4,5,7]
+for i in list:
+    print(i)'''
+#itr function converts list into itterator
+nums=[1,2,4,5,7,8]
+itr=iter(nums)  #iter method convert list into iterator
+print(itr)
+print(itr.__next__())       #next() will give next element and save the record of previous one
+print(itr.__next__())
+print(next(itr))

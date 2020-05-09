@@ -1,0 +1,21 @@
+#values must be sorted
+pos=0
+list=[21,33,43,52,65,70,90]
+n=90
+def bsearch(list,n):
+    l=0
+    u=len(list)-1
+    while l<=u:
+        m=(l+u)//2
+        if list[m]==n:
+            globals()['pos']=m
+            return True
+        elif  list[m]<n:
+            l = m + 1
+        else:
+            u=m+1
+    return False
+if bsearch(list,n):
+    print(n,"FOUND at",pos)
+else:
+    print(n,"NOT FOUND")

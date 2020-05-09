@@ -1,0 +1,11 @@
+import mysql.connector
+mydb=mysql.connector.connect(host="localhost",user='root',password='1234',port='8080',database='pythondb')
+mycursor=mydb.cursor()
+mycursor.execute("show databases")
+#case 1
+mycursor.execute("select * from student")
+#case 2
+result=mycursor.fetchall()
+#result=mycursor.fetchone()
+for i in result:
+    print(i)

@@ -1,0 +1,19 @@
+#Anonymous function is also called as lamda function or lamda expression
+#Simple function
+#def square(a):
+#    return a*a
+#result=square(5)
+#print(result)
+
+#Annonymous function
+'''f=lambda a:a*a
+result = f(5)
+print(result)'''
+
+#Another Annoynmous Block
+#a=10
+#b=5
+#print(lambda a,b:a%b)
+#f=lambda a,b:a%b
+#result=f(10,2)
+#print(result)

@@ -1,0 +1,15 @@
+# from numpy import *
+#arr1=array([1,2,3,4,5])
+#arr5=arr1+5
+#print(arr1)
+#arr2=array([5,4,3,2,1])
+#arr3=arr1+arr2
+#print(arr3)
+#arr4=array([10,11,12,13,14])
+#print(max(arr4))
+#print(min(arr4))
+#print(sum(arr4))
+#print(sin(arr4))
+#print(cos(arr4))
+#print(sqrt(arr4))
+#print(concatenate([arr1,arr2]))

@@ -1,0 +1,17 @@
+class A:
+    def fragment1(self):
+        print("frangement1 of class A")
+    def fragment2(self):
+        print("fragment2 of calss A")
+class B:
+    def fragment3(self):
+        print("frangement1 of class B")
+    def fragment4(self):
+        print("frangement1 of class B")
+a=A()
+a.fragment1()
+a.fragment2()
+
+b=B()
+b.fragment3()
+b.fragment4()

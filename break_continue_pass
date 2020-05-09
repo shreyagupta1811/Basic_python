@@ -1,0 +1,10 @@
+av_quan=5
+user=int(input("enter no of candy u wanr:"))
+i=1
+while i<=user:
+    if i>av_quan:
+        print("out of stock")
+        break
+    print(i,"canday")
+    i+=1
+print('your available order is done!! byeee')

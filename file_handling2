@@ -1,0 +1,4 @@
+f2=open('rose.png','rb')
+f4=open('newpic.png','wb')
+for j in f2:
+    f4.write(j)

@@ -1,0 +1,21 @@
+size=int(input("enter size of list:"))
+list=[]
+for i in range(size):
+    x=int(input("enter number in list"))
+    list.append(x)
+print(list)
+
+def count(list):
+    even = 0
+    odd = 0
+    for i in list:
+        if i%2==0:
+            even+=1
+        else:
+            odd+=1
+   # print("No of even no's:", even)
+   # print("No of odd no's:", odd)
+    return even,odd
+even,odd=count(list)
+print("no of even:",even,'no of add:',odd)
+print("Even: {} and odd: {}".format(even,odd))

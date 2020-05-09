@@ -1,0 +1,30 @@
+class A:
+    def __init__(self):
+        print("cons of class A")
+    def fragment1(self):
+        print("fragment1 of class A")
+    def fragment2(self):
+        print("fragment2 of class A")
+class B():
+    def __init__(self):
+        # super().__init__()
+        print("cons of class B")
+    def fragment3(self):
+        print("fragment3 of class B")
+    def fragment4(self):
+        print("fragment4 of class B")
+class C(A,B):               #MRO-METHOD RESOLUTION ORDER.
+    def __init__(self):
+        super().__init__()
+        print("cons of class C")
+
+    def fragment5(self):
+        print("fragment5 of class C")
+
+    def fragment6(self):
+        super().fragment4()
+        print("fragment6 of class C")
+#a =A()
+#b=B()
+c=C()
+c.fragment6()
